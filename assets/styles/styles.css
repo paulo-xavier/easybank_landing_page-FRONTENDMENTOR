@@ -15,6 +15,11 @@ header {
 
     display: flex;
     justify-content: space-evenly;
+
+    position: relative;
+
+    
+    z-index: 2;
 }
 
 .nav-brand {
@@ -27,26 +32,37 @@ nav {
     /* background-color: green; */
     width: 40%;
     color: var(--main-text-color);
+
+    display: flex;
+    height: 20px;
+
+    z-index: 56;
+    
 }
 
 .nav-items {
 
-    background-color: red;
+    /* background-color: blue; */
 
     display: flex;
     column-gap: 20px;
-    height: 75px;
+    height: 50px;
     align-items: center; 
+    
+    
 }
 
+.nav-item {
+    min-height: 100%;
+    transition: all .3s;
+}
 
 .nav-item:hover {
     border-image: linear-gradient(100deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-
-    border: 2px solid red;
+    border-bottom: 5px solid; 
+    border-image-slice: 2;
 
 }
-
 
 .request-invite-button {
 
@@ -61,4 +77,38 @@ nav {
     color: white;
     font-weight: 700;
     font-size: .9em;
+}
+
+
+/* main */
+
+
+.home {
+    background-color: red;
+    /* position: relative;*/
+
+    display: flex;
+    padding-left: 30px;
+    width: 100%;
+    min-height: 400px;
+}
+
+.company-presentation-section {
+    background-color: darkorange;
+    width: 45%;
+}
+
+aside {
+    background-color: darkviolet;
+    width: 55%;
+    height: 600px;
+    z-index: 0;
+}
+
+.image-mockups {
+    position: relative;
+    object-fit:cover;
+    height: 100%;
+    width: 100%;
+    overflow-y: visible;
 }
