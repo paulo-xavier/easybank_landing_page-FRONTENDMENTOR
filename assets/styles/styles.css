@@ -5,25 +5,26 @@
 
 body {
     background-color: hsl(0, 0%, 100%);
+
+    margin-top: 75px;
 }
 
 header {
-    /* background-color: darkgoldenrod; */
-
+    background-color: hsl(0, 0%, 100%);
     height: 75px;
     align-items: center;
 
     display: flex;
     justify-content: space-evenly;
 
-    position: relative;
-
-    
-    z-index: 2;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
 }
 
 .nav-brand {
-    /* background-color: red; */
+      
     width: 25%;
     margin-left: 60px;
 }
@@ -36,7 +37,7 @@ nav {
     display: flex;
     height: 20px;
 
-    z-index: 56;
+    /* z-index: 56; */
     
 }
 
@@ -84,7 +85,7 @@ nav {
 
 
 .home {
-    background-color: red;
+    /* background-color: red; */
     /* position: relative;*/
 
     display: flex;
@@ -94,21 +95,65 @@ nav {
 }
 
 .company-presentation-section {
-    background-color: darkorange;
-    width: 45%;
+    /* background-color: darkorange; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+}
+
+.company-presentation {
+    /* background-color: yellow; */
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 30px 30px 0;
+    width: 75%;
+}
+
+h1 {
+    /* background-color: lightblue; */
+    font-size: 2.4em;
+    font-weight: 400;
+    width: 80%;
+}
+
+.short-description {
+    /* background-color: pink; */
+    font-size: 1em;
+    line-height: 1.3;
+    color: var(--main-text-color);
 }
 
 aside {
-    background-color: darkviolet;
-    width: 55%;
+    /* background-color: darkviolet; */
+    width: 50%;
     height: 600px;
-    z-index: 0;
+}
+
+aside::after {
+    content: url('../../assets/images/bg-intro-desktop.svg');
+
+    position: absolute;
+    z-index: -2;
+
+    width: 90%;
+    height: 1%;
+    top: -250px;
+    left: 480px;
+    
 }
 
 .image-mockups {
     position: relative;
     object-fit:cover;
-    height: 100%;
+    height: 90%;
     width: 100%;
+
+    margin-top: 20px;
+
     overflow-y: visible;
 }
