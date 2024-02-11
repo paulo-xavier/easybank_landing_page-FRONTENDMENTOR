@@ -1,5 +1,8 @@
 :root {
     --main-text-color: hsl(233, 8%, 62%);
+    --secondary-background-color: hsl(220, 16%, 96%); 
+    --tertiary-background-color: hsl(0, 0%, 98%); 
+    --footer-background: hsl(233, 26%, 24%); 
 }
 
 
@@ -153,7 +156,7 @@ aside::after {
     height: 90%;
     width: 100%;
 
-    margin-top: 20px;
+    margin-top: 30px;
 
     overflow-y: visible;
 }
@@ -163,9 +166,9 @@ aside::after {
 
 
 .features-section {
-    /* background-color: darkorange; */
+    background-color: var(--secondary-background-color);
 
-    padding: 40px 20px 20px 90px;
+    padding: 60px 20px 20px 90px;
     gap: 30px;
 
     display: flex;
@@ -176,30 +179,122 @@ aside::after {
 
 .section-title {
     /* background-color: darkgreen; */
-    font-size: 1.7em;
+    font-size: 1.8em;
     font-weight: 400;
 }
 
 #short-description {
     width: 56%;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 
 .company-features {
     display: flex; 
+    column-gap: 25px;
+    width: 95%;
+    margin-bottom: 50px;
 }
 
 .feature {
-    background: darkorange;
-
+    /* background: darkorange; */
     display: flex;
-  flex-direction: column;
+    flex-direction: column;
+    width: 40%;
+    gap: 25px;
 
-  width: 30%;
 }
 
 .feature-logo {
     width: 80px;
     height: auto;
+}
+
+h3 {
+    /* background-color: lightblue; */
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.feature-description {
+    /* background: darkkhaki; */
+    width: 100%;
+    color: var(--main-text-color);
+}
+
+
+/* Latest articles section */ 
+
+.latest-articles-section {
+    background-color: var(--tertiary-background-color);
+    padding: 60px 20px 20px 90px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.latest-articles-container {
+    /* background-color: darkgreen; */
+    display: flex;
+    column-gap: 30px; 
+    width: 95%;
+
+}
+
+.latest-article {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: white;
+    margin-bottom: 60px;
+}
+
+.latest-article-image {
+    height: 190px;
+    width: 100%;
+}
+
+.article-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    padding: 25px;
+}
+
+.article-author {
+    font-size: .8em;
+    color: var(--main-text-color);
+}
+
+.article-title {
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.article-description {
+    font-size: .9em;
+    color: var(--main-text-color);
+}
+
+
+footer {
+    background-color:var(--footer-background);
+}
+
+.social-medias {
+}
+
+#easybank-logo-white{
+    /* filter: invert(100%) sepia(0%) saturate(200%) hue-rotate(500deg) brightness(100%) contrast(100%);
+
+    fill: white; */
+
+    /* filter: hue-rotate(500deg); */
+
+
+    
+filter: brightness(0) saturate(100%) invert(200%) sepia(0%) saturate(50%) hue-rotate(700deg) brightness(107%) contrast(108%);
+    
 }
