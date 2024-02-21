@@ -147,8 +147,8 @@ aside::after {
 
     width: 90%;
     height: 1%;
-    top: -250px;
-    left: 480px;
+    top: -185px; 
+    left: 38%;
     
 }
 
@@ -248,17 +248,18 @@ h3 {
 .latest-article {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    background-color: white;
+    /* background-color: white; */
     margin-bottom: 60px;
 }
 
 .latest-article-image {
     height: 190px;
     width: 100%;
+    object-fit: cover;
 }
 
 .article-info {
+    /* background-color: red; */
     display: flex;
     flex-direction: column;
     gap: 15px; 
@@ -287,7 +288,6 @@ footer {
     justify-content: space-between;
     width: 100%;
     padding: 50px 80px;
-
     /* background-color: darkgray; */
 }
 
@@ -326,7 +326,7 @@ footer {
     /* background-color: darkorange; */
     display: flex;
     width: 100%;
-    column-gap: 95px;
+    column-gap: 100px;
     justify-content: center;
 }
 
@@ -347,4 +347,9 @@ footer {
     flex-direction: column;
     gap: 25px;
     color: var(--main-text-color);
+    /* background-color: red; */
+}
+
+#copyright-rights {
+    transform: translateX(-54px);
 }
